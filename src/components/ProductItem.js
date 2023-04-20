@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 const ProductItem = ({product}) => {
   return (
     <View style={styles.card}>
-      <Image style={styles.image} source={{uri: product.images[0]}} />
+      <Image style={styles.image} source={{uri: product.images[1]}} />
       <View style={styles.content}>
         <Text style={styles.title}>{product.title}</Text>
         <Text style={styles.price}>${product.price}</Text>
@@ -15,7 +15,7 @@ const ProductItem = ({product}) => {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: '#1F7870',
     borderRadius: 5,
     elevation: 5,
     margin: 10,
@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: 'white'
   },
   description: {
     fontSize: 10,
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   },
   price: {
     fontSize: 16,
-    color: '#808080',
+    color: 'white',
   },
 });
 
